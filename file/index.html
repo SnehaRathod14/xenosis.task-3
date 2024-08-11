@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Shop</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="Order">
+            <div class="Order">
+                <img src="order 1.jpeg" alt="order 1">
+                <h2>order 1</h2>
+                <p>$19.99</p>
+                <button onclick="addToCart('order 1', 19.99)">Add to Cart</button>
+            </div>
+            <div class="order">
+                <img src="order 2.jpeg" alt="order 2">
+                <h2>order 2</h2>
+                <p>$29.99</p>
+                <button onclick="addToCart('order 2', 29.99)">Add to Cart</button>
+            </div>
+                <div class="Order">
+                    <img src="order 3.jpeg" alt="order 3">
+                    <h2>order 3</h2>
+                    <p>$19.99</p>
+                    <button onclick="addToCart('order 3', 19.99)">Add to Cart</button>
+                </div>
+                <div class="order">
+                    <img src="order 4.jpeg" alt="order 4">
+                    <h2>order 4</h2>
+                    <p>$29.99</p>
+                    <button onclick="addToCart('order 4', 29.99)">Add to Cart</button>
+                </div>
+            <!-- Add more products as needed -->
+        </section>
+
+        <section class="cart">
+            <h2>Order Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </section>
+    </main>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: rathodsneha14@gmail.com</p>
+            <p>Phone: +9055325875</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My E-Commerce Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
